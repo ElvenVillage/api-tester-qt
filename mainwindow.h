@@ -16,6 +16,11 @@ public:
     ~MainWindow();
 private slots:
     void on_runButton_clicked();
+
+    void on_curlButton_clicked();
+
+    void on_addPairButton_clicked();
+
 private:
     Ui::MainWindow *ui;
     void run_curl();

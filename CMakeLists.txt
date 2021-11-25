@@ -23,6 +23,8 @@ set(PROJECT_SOURCES
         mainwindow.ui
         curl_events.cpp
         curl_events.h
+        #qdynamicbutton.cpp
+        #qdynamicbutton.h
         ${TS_FILES}
 )
 

@@ -11,44 +11,208 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>MainWindow</string>
+   <string>API tester Qt</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QPushButton" name="runButton">
-    <property name="geometry">
-     <rect>
-      <x>700</x>
-      <y>50</y>
-      <width>96</width>
-      <height>36</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Run</string>
-    </property>
-   </widget>
-   <widget class="QTextBrowser" name="textBrowser">
-    <property name="geometry">
-     <rect>
-      <x>840</x>
-      <y>0</y>
-      <width>421</width>
-      <height>551</height>
-     </rect>
-    </property>
-   </widget>
-   <widget class="QLineEdit" name="URLlineEdit">
+   <widget class="QWidget" name="horizontalLayoutWidget">
     <property name="geometry">
      <rect>
       <x>0</x>
-      <y>10</y>
-      <width>801</width>
-      <height>36</height>
+      <y>0</y>
+      <width>761</width>
+      <height>551</height>
      </rect>
     </property>
-    <property name="text">
-     <string>https://www.example.com</string>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QFrame" name="frame_2">
+       <property name="frameShape">
+        <enum>QFrame::StyledPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Raised</enum>
+       </property>
+       <widget class="QFrame" name="frame_3">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>10</y>
+          <width>711</width>
+          <height>111</height>
+         </rect>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <widget class="QPushButton" name="addPairButton">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>70</y>
+           <width>96</width>
+           <height>36</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Add key</string>
+         </property>
+        </widget>
+        <widget class="QComboBox" name="methodBox">
+         <property name="geometry">
+          <rect>
+           <x>110</x>
+           <y>70</y>
+           <width>125</width>
+           <height>36</height>
+          </rect>
+         </property>
+         <property name="currentText">
+          <string/>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="runButton">
+         <property name="geometry">
+          <rect>
+           <x>600</x>
+           <y>70</y>
+           <width>96</width>
+           <height>36</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Run</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="URLlineEdit">
+         <property name="geometry">
+          <rect>
+           <x>20</x>
+           <y>20</y>
+           <width>671</width>
+           <height>36</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>https://www.example.com</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="curlButton">
+         <property name="geometry">
+          <rect>
+           <x>490</x>
+           <y>70</y>
+           <width>96</width>
+           <height>36</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>get Curl</string>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QScrollArea" name="scrollArea">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>130</y>
+          <width>711</width>
+          <height>381</height>
+         </rect>
+        </property>
+        <property name="widgetResizable">
+         <bool>true</bool>
+        </property>
+        <widget class="QWidget" name="scrollAreaWidgetContents">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>0</y>
+           <width>707</width>
+           <height>377</height>
+          </rect>
+         </property>
+         <widget class="QFrame" name="frame">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>10</y>
+            <width>691</width>
+            <height>80</height>
+           </rect>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <widget class="QLineEdit" name="lineEdit">
+           <property name="geometry">
+            <rect>
+             <x>150</x>
+             <y>20</y>
+             <width>113</width>
+             <height>36</height>
+            </rect>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="lineEdit_2">
+           <property name="geometry">
+            <rect>
+             <x>290</x>
+             <y>20</y>
+             <width>113</width>
+             <height>36</height>
+            </rect>
+           </property>
+          </widget>
+          <widget class="QComboBox" name="comboBox_2">
+           <property name="geometry">
+            <rect>
+             <x>20</x>
+             <y>20</y>
+             <width>125</width>
+             <height>36</height>
+            </rect>
+           </property>
+          </widget>
+          <widget class="QToolButton" name="toolButton">
+           <property name="geometry">
+            <rect>
+             <x>650</x>
+             <y>20</y>
+             <width>31</width>
+             <height>32</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>X</string>
+           </property>
+          </widget>
+         </widget>
+        </widget>
+       </widget>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="horizontalLayoutWidget_2">
+    <property name="geometry">
+     <rect>
+      <x>760</x>
+      <y>0</y>
+      <width>481</width>
+      <height>551</height>
+     </rect>
     </property>
+    <layout class="QHBoxLayout" name="horizontalLayout_2">
+     <item>
+      <widget class="QTextBrowser" name="textBrowser"/>
+     </item>
+    </layout>
    </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">

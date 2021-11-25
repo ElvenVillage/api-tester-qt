@@ -29,3 +29,6 @@ int curl_query(std::string url,std::string &answer){
   }
   return 0;
 }
+void curl_query_text(std::string url,std::string &answer){
+    answer="curl -X GET \""+url+"\"";
+}
